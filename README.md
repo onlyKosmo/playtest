@@ -19,7 +19,6 @@ Fonctionnalité de tri : Les utilisateurs peuvent trier les jeux en fonction de 
    Inscription : Les utilisateurs peuvent créer un compte en renseignant leur prénom, nom, email et mot de passe. Les informations sont stockées dans la base de données.
 
 Connexion : Les utilisateurs peuvent se connecter avec leur adresse e-mail et leur mot de passe. Une fois connectés, ils ont accès à leurs propres notes et commentaires sur les jeux.
-Utilisateur de test (optionnel, car possibilité d'en créer un) : Utilisateur : Djibril	Lamroussi	Email : djibril.lamroussi@dbd.com	Mot de passe : chef
 
 4. Page de détails des jeux (page\_exemple.php)
    Description détaillée : Chaque jeu a sa propre page de détails, affichant une description complète, la date de création, le lien vers Steam, et sa note moyenne.
