@@ -27,6 +27,6 @@ try {
 } catch (PDOException $e) {
     echo "Erreur lors de la réinitialisation : " . $e->getMessage();
 }
-header("Location: /sae203/homepage.php");
+header("Location: /playtest/homepage.php");
 exit();
 ?>
