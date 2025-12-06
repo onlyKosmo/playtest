@@ -1,0 +1,109 @@
+/* Appliquer Flexbox pour la mise en page du header */
+header {
+    background-color: #C1C1C1;
+    padding: 20px 40px; /* Réduire l'espacement pour une meilleure proportion */
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start; /* Garde les éléments du menu à gauche */
+    align-items: center;
+}
+
+#logo-container {
+    flex: 0 1 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: translateY(-3px); /* Animation plus fluide pour les titres */
+}
+
+nav ul li a {
+    color: #D16666;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2C4251; /* Bleu électrique au survol */
+    transform: translateY(-3px); /* Animation fluide et subtile */
+}
+
+/* Positionner le formulaire de recherche en haut à droite */
+#search-container {
+    position: absolute; /* Positionnement absolu */
+    right: 40px; /* Décalage à droite */
+    top: 50%; /* Centré verticalement */
+    transform: translateY(-50%); /* Pour bien centrer au milieu */
+    z-index: 200;
+}
+
+#search-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-container input[type="text"] {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 200px; /* Taille plus petite pour discrétion */
+    transition: border-color 0.3s ease;
+}
+
+#search-container input[type="text"]:focus {
+    border-color: #D16666; /* Lueur verte au focus */
+    outline: none;
+}
+
+#search-container button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #D16666; /* Vert néon pour le bouton */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#search-container button:hover {
+    background-color: #2C4251;
+    transform: translateY(-3px); /* Effet de survol subtil */
+}
+
+#typo_logo {
+    font-size: 3em;
+    font-family: "Alfa Slab One", serif;
+    color: #D16666;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+#typo_logo:hover {
+    color: #2C4251;
+}

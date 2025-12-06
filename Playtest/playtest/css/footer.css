@@ -1,0 +1,60 @@
+/* Container principal du footer */
+footer {
+    background-color: #222; /* Gris très foncé pour le footer */
+    color: white;
+    font-family: "Roboto Thin", sans-serif;
+    padding: 50px 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Footer container avec Flexbox pour une mise en page fluide */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-container h3 {
+    color: #D16666;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Sections du footer */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section a {
+    color: #bbb;
+    font-size: 1em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #2C4251;
+}
+
+/* Footer Bottom (Copyright) */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    background-color: #111; /* Fond noir pour le bas du footer */
+    padding: 20px;
+    color: #ccc;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}

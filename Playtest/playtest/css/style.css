@@ -1,0 +1,275 @@
+/* Style global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2C4251;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+h1, h2, h3 {
+    color: #C1C1C1;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+p {
+    color: #bbb;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #C1C1C1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, table {
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.jeux-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.jeu-card {
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jeu-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.jeu-card h3 {
+    font-size: 22px;
+    color: #2C4251;
+    margin-bottom: 10px;
+}
+
+.jeu-card p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.jeu-card a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00BFFF;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.jeu-card a:hover {
+    background-color: #2C4251;
+    transform: translateY(-5px);
+}
+
+.jeu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px #2C4251;
+}
+
+form {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #00BFFF;
+}
+
+form input[type="number"],
+form textarea,
+form button {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #2C4251;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #C1C1C1;
+    transform: translateY(-5px);
+}
+
+/* Messages et redirections */
+.message {
+    padding: 25px;
+    background-color: #2C4251;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-size: 18px;
+    box-shadow: 0 6px 20px #2C4251;
+}
+
+#register {
+    text-align: center;
+}
+
+/* Tableaux */
+th {
+    cursor: pointer;
+    background-color: #D16666;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #C1C1C1;
+}
+
+th:hover {
+    background-color: #2C4251;
+}
+
+td {
+    padding: 8px 15px;
+    text-align: center;
+    border: 3px solid #D16666;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+
+/* Formulaire de connexion */
+.login-form {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    max-width: 400px;
+    margin: 0 auto; /* Centre le formulaire */
+}
+
+.login-form h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #00BFFF;
+    outline: none;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2C4251;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.login-form button:hover {
+    background-color: #D16666;
+}
+
+.h1 {
+    margin-left: 1em;
+}
+
+.btn-details {
+    text-decoration: none;
+    color: #D16666;
+}
+
+.police-jeux {
+    font-family: Chiller, serif;
+    font-size: 2em;
+    color: #D16666;
+    font-style: oblique;
+}
+
+.color-rate {
+    font-family: Chiller, serif;
+    font-size: 2em;
+    color: #D16666;
+    font-style: initial;
+}
